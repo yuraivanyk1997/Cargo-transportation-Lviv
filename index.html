@@ -13,18 +13,30 @@
       background: #f9f9f9;
     }
     header {
-      background: #004aad;
+      position: relative;
+      background: url("images/truck.png") no-repeat center center;
+      background-size: cover;
       color: white;
       text-align: center;
-      padding: 40px 20px;
+      padding: 120px 20px;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5); /* затемнення */
+    }
+    header h1, header p {
+      position: relative;
+      z-index: 1;
     }
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
     }
     header p {
-      margin: 5px 0 0;
-      font-size: 1.2rem;
+      margin: 10px 0 0;
+      font-size: 1.4rem;
     }
     section {
       max-width: 900px;
