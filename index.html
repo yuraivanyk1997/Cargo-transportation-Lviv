@@ -1,101 +1,144 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Вантажні перевезення по Україні. Швидко, надійно та доступно.">
-  <title>Вантажні перевезення</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #333;
-      background: #f9f9f9;
-    }
-    header {
-      position: relative;
-      background: url("images/truck.png") no-repeat center center;
-      background-size: cover;
-      color: white;
-      text-align: center;
-      padding: 120px 20px;
-    }
-    header::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0,0,0,0.5); /* затемнення */
-    }
-    header h1, header p {
-      position: relative;
-      z-index: 1;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.8rem;
-    }
-    header p {
-      margin: 10px 0 0;
-      font-size: 1.4rem;
-    }
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    .services, .contacts {
-      background: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    h2 {
-      margin-top: 0;
-      color: #004aad;
-    }
-    .contacts a {
-      display: block;
-      margin: 5px 0;
-      color: #004aad;
-      text-decoration: none;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #eee;
-      font-size: 0.9rem;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Вантажні перевезення</h1>
-    <p>Швидко • Надійно • Доступно</p>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Вантажні перевезення Львів та Україна. Швидко, надійно та доступно. Квартирні та офісні переїзди, доставка будматеріалів."
+    />
+    <link rel="icon" type="image/png" href="images/ico.png">
+    <title>Вантажні перевезення Львів | Перевезення вантажів та переїзди</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: #333;
+        background: #f9f9f9;
+      }
+      header {
+        position: relative;
+        background: url("images/truck.png") no-repeat center center;
+        background-size: cover;
+        color: white;
+        text-align: center;
+        padding: 120px 20px;
+      }
+      header::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+      }
+      header h1,
+      header p {
+        position: relative;
+        z-index: 1;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 2.8rem;
+      }
+      header p {
+        margin: 10px 0 0;
+        font-size: 1.4rem;
+      }
+      nav {
+        background: #003580;
+        padding: 10px;
+        text-align: center;
+      }
+      nav a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+      }
+      section {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+      .services,
+      .contacts {
+        background: white;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        margin-top: 0;
+        color: #004aad;
+      }
+      .contacts a {
+        display: block;
+        margin: 5px 0;
+        color: #004aad;
+        text-decoration: none;
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: #eee;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Вантажні перевезення Львів</h1>
+      <p>Швидко • Надійно • Доступно</p>
+    </header>
 
-  <section>
-    <div class="services">
-      <h2>Наші послуги</h2>
-      <ul>
-        <li>Перевезення вантажів по Україні</li>
-        <li>Квартирні та офісні переїзди</li>
-        <li>Доставка будматеріалів</li>
-        <li>Послуги вантажників</li>
-      </ul>
-    </div>
+    <!-- Навігація -->
+    <nav>
+      <a href="index.html">Головна</a>
+      <a href="perevezennia-lviv.html">Вантажні перевезення</a>
+      <a href="kvartyrni-pereizdy.html">Квартирні переїзди</a>
+      <a href="ofisni-pereizdy.html">Офісні переїзди</a>
+      <a href="dostavka-budmaterialiv.html">Доставка будматеріалів</a>
+      <a href="poslugy-vantazhnykiv.html">Послуги вантажників</a>
+    </nav>
 
-    <div class="contacts">
-      <h2>Контакти</h2>
-      <p>Телефон: <a href="tel:+380991234567">+380 (63) 040 56 82</a></p>
-      <p>Email: <a href="oleh.dymich@gmail.com">oleh.dymich@gmail.com</a></p>
-      <p>Наш instagram: <a href="https://www.instagram.com/oleh24002?igsh=ZjZiNDNrdTU1YzQ1" target="_blank">oleh24002</a></p>
-    </div>
-  </section>
+    <section>
+      <div class="services">
+        <h2>Наші послуги вантажних перевезень у Львові та по Україні</h2>
+        <p>
+          Надаємо професійні послуги перевезення вантажів по Україні.
+          Організуємо квартирні та офісні переїзди, доставку будівельних
+          матеріалів та інші вантажні послуги швидко та надійно.
+        </p>
+        <ul>
+          <li>
+            <a href="perevezennia-lviv.html">Перевезення вантажів по Україні</a>
+          </li>
+          <li><a href="kvartyrni-pereizdy.html">Квартирні переїзди</a></li>
+          <li><a href="ofisni-pereizdy.html">Офісні переїзди</a></li>
+          <li>
+            <a href="dostavka-budmaterialiv.html">Доставка будматеріалів</a>
+          </li>
+          <li><a href="poslugy-vantazhnykiv.html">Послуги вантажників</a></li>
+        </ul>
+      </div>
 
-  <footer>
-    © 2025 Вантажні перевезення | Усі права захищені
-  </footer>
-</body>
+      <div class="contacts">
+        <h2>Контакти</h2>
+        <p>Телефон: <a href="tel:+380630405682">+380 (63) 040 56 82</a></p>
+        <p>
+          Email:
+          <a href="mailto:oleh.dymich@gmail.com">oleh.dymich@gmail.com</a>
+        </p>
+        <p>
+          Наш Instagram:
+          <a
+            href="https://www.instagram.com/oleh24002?igsh=ZjZiNDNrdTU1YzQ1"
+            target="_blank"
+            >oleh24002</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <footer>© 2025 Вантажні перевезення | Усі права захищені</footer>
+  </body>
 </html>
-
