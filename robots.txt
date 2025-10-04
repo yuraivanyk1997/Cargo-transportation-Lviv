@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cargo.lviv.ua/sitemap.xml
+Host: cargo.lviv.ua

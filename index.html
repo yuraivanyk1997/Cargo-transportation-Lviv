@@ -1,63 +1,93 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
+    <!-- дозвіл на індексацію -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- канонічна URL (щоб уникнути дублювання) -->
+    <link rel="canonical" href="https://cargo.lviv.ua/" />
+
+    <!-- Open Graph (покращує вигляд при шарінгу) -->
+    <meta property="og:locale" content="uk_UA" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Вантажні перевезення Львів | Cargo Lviv"
+    />
+    <meta
+      property="og:description"
+      content="Вантажні перевезення Львів та Україна. Швидко, надійно та доступно."
+    />
+    <meta property="og:url" content="https://cargo.lviv.ua/" />
+    <!-- додай зображення (скачуване за вказаним шляхом) -->
+    <meta
+      property="og:image"
+      content="https://cargo.lviv.ua/images/ico.png"
+    />
+
+    <!-- JSON-LD schema.org для локального бізнесу -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Cargo Lviv",
+        "description": "Вантажні перевезення Львів та Україна. Швидко, надійно та доступно.",
+        "url": "https://cargo.lviv.ua/",
+        "telephone": "+380630405682",
+        "email": "oleh.dymich@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Львів",
+          "addressCountry": "UA"
+        },
+        "sameAs": ["https://www.instagram.com/oleh24002"]
+      }
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Вантажні перевезення Львів та Україна. Швидко, надійно та доступно. Квартирні та офісні переїзди, доставка будматеріалів."
     />
-    <link rel="icon" type="image/png" href="images/ico.png">
-    <title>Вантажні перевезення Львів | Перевезення вантажів та переїзди</title>
+    <link rel="icon" type="image/png" href="images/ico.png" />
+    <title>Вантажні перевезення Львів | Cargo Lviv</title>
     <style>
       body {
-        margin: 0;
         font-family: Arial, sans-serif;
-        color: #333;
-        background: #f9f9f9;
-      }
-      header {
-        position: relative;
-        background: url("images/truck.png") no-repeat center center;
-        background-size: cover;
-        color: white;
-        text-align: center;
-        padding: 120px 20px;
-      }
-      header::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.5);
-      }
-      header h1,
-      header p {
-        position: relative;
-        z-index: 1;
-      }
-      header h1 {
+        line-height: 1.6;
         margin: 0;
-        font-size: 2.8rem;
+        padding: 0;
       }
-      header p {
-        margin: 10px 0 0;
-        font-size: 1.4rem;
+
+      header {
+        background: #004aad;
+        color: white;
+        padding: 15px 20px; /* однакова висота на всіх сторінках */
+        text-align: center;
       }
+
       nav {
         background: #003580;
-        padding: 10px;
         text-align: center;
+        padding: 10px;
       }
+
       nav a {
         color: white;
-        margin: 0 10px;
         text-decoration: none;
+        margin: 0 10px;
       }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
       section {
         max-width: 900px;
-        margin: 40px auto;
+        margin: 20px auto;
         padding: 0 20px;
       }
+
       .services,
       .contacts {
         background: white;
@@ -66,16 +96,28 @@
         border-radius: 10px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       }
+
       h2 {
-        margin-top: 0;
         color: #004aad;
+        margin-bottom: 10px;
       }
+
+      ul {
+        padding-left: 20px;
+        margin-top: 10px;
+      }
+
       .contacts a {
         display: block;
         margin: 5px 0;
         color: #004aad;
         text-decoration: none;
       }
+
+      .contacts a:hover {
+        text-decoration: underline;
+      }
+
       footer {
         text-align: center;
         padding: 20px;
@@ -90,7 +132,6 @@
       <p>Швидко • Надійно • Доступно</p>
     </header>
 
-    <!-- Навігація -->
     <nav>
       <a href="index.html">Головна</a>
       <a href="perevezennia-lviv.html">Вантажні перевезення</a>
@@ -102,9 +143,9 @@
 
     <section>
       <div class="services">
-        <h2>Наші послуги вантажних перевезень у Львові та по Україні</h2>
+        <h2>Наші послуги вантажних перевезень</h2>
         <p>
-          Надаємо професійні послуги перевезення вантажів по Україні.
+          Надаємо професійні послуги перевезення вантажів по Львову та Україні.
           Організуємо квартирні та офісні переїзди, доставку будівельних
           матеріалів та інші вантажні послуги швидко та надійно.
         </p>
@@ -130,15 +171,13 @@
         </p>
         <p>
           Наш Instagram:
-          <a
-            href="https://www.instagram.com/oleh24002?igsh=ZjZiNDNrdTU1YzQ1"
-            target="_blank"
+          <a href="https://www.instagram.com/oleh24002" target="_blank"
             >oleh24002</a
           >
         </p>
       </div>
     </section>
 
-    <footer>© 2025 Вантажні перевезення | Усі права захищені</footer>
+    <footer>© 2025 Cargo Lviv | Усі права захищені</footer>
   </body>
 </html>
