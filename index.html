@@ -48,37 +48,26 @@
     <link rel="icon" type="image/png" href="images/ico.png" />
     <title>Вантажні перевезення Львів | Cargo Lviv</title>
     <style>
+      /* Базові стилі */
+      html,
       body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
         margin: 0;
         padding: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        overflow-x: hidden; /* прибирає горизонтальний скрол */
       }
 
-      header {
-        background: #004aad;
-        color: white;
-        padding: 15px 20px;
-        text-align: center;
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0; /* прибираємо зайві відступи для точного контролю */
       }
 
-      nav {
-        background: #003580;
-        text-align: center;
-        padding: 10px;
-      }
-
-      nav a {
-        color: white;
-        text-decoration: none;
-        margin: 0 10px;
-      }
-
-      nav a:hover {
-        text-decoration: underline;
-      }
-
-      section {
+      section,
+      .services,
+      .contacts {
         max-width: 900px;
         margin: 20px auto;
         padding: 0 20px;
@@ -86,20 +75,67 @@
 
       .services,
       .contacts {
-        background: white;
+        background: #fff;
         padding: 20px;
         margin-bottom: 20px;
         border-radius: 10px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       }
 
-      h2 {
+      /* Header */
+      header {
+        background: #004aad;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+
+      header p {
+        margin-top: 5px; /* невеликий відступ під заголовком */
+      }
+
+      /* Навігація */
+      nav {
+        background: #003580;
+        text-align: center;
+        padding: 10px;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+        display: inline-block;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      /* Адаптивне меню для мобілки */
+      @media screen and (max-width: 600px) {
+        nav {
+          text-align: left;
+          padding: 10px 20px;
+        }
+
+        nav a {
+          display: block;
+          margin: 5px 0;
+        }
+      }
+
+      /* Заголовки та списки */
+      h2,
+      h3 {
         color: #004aad;
+      }
+
+      h2 {
         margin-bottom: 10px;
       }
 
       h3 {
-        color: #004aad;
         margin-top: 15px;
       }
 
@@ -108,6 +144,7 @@
         margin-top: 10px;
       }
 
+      /* Контакти */
       .contacts a {
         display: block;
         margin: 5px 0;
@@ -119,6 +156,7 @@
         text-decoration: underline;
       }
 
+      /* Footer */
       footer {
         text-align: center;
         padding: 20px;
