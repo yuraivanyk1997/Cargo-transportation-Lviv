@@ -124,3 +124,43 @@ footer {
   box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
   border-top: 1px solid rgba(0,0,0,0.05);
 }
+
+/* Стандартний вигляд для великих екранів */
+nav {
+  background: rgba(255,255,255,0.95);
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  backdrop-filter: blur(4px);
+
+  display: flex;
+  justify-content: center; /* горизонтальне центрування */
+  flex-wrap: wrap;
+  gap: 20px;               /* відстань між лінками */
+}
+
+nav a {
+  color: #1c1c1e;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #0071e3;
+  transform: translateY(-2px);
+}
+
+/* Мобільна адаптація: вертикальне меню */
+@media (max-width: 1295px) {
+  nav {
+    flex-direction: column;  /* лінки один під одним */
+    align-items: flex-start; /* вирівнювання по лівому краю */
+    padding: 20px;
+  }
+
+  nav a {
+    margin: 8px 0;           /* вертикальні відступи */
+  }
+}
